@@ -1,38 +1,66 @@
-.App {
+#root , html , body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.app{
+  height: 100%;
+  background-image: url("https://template.canva.com/EAD2962NKnQ/2/0/800w-98aZLNQxJXg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card{
+background-color: white;
+width: fit-content;
+max-width: 40%;
+height: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border-radius: 25px;
+padding: 2%;
+box-shadow: 10px 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  height: 580px;
+  font-family: 'League Spartan', sans-serif;
+}
+.button{
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  cursor: pointer;
+  text-transform: capitalize;
+  height: 200px;
+  width: 210px;
+  opacity: 1;
+  background-color: white;
+  border: 1px solid #164ca7;
+  color: #164ca7;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+.button:hover{
+  background-color: #164ca7;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width:600px) {
+   .card{
+    width: 80%;
+    height: 30%;
+  } 
+  
 }
