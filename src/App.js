@@ -9,8 +9,7 @@ function App() {
     axios
       .get("https://api.adviceslip.com/advice")
       .then((response) => {
-        const {advice} = response.data.slip;
-        console.log(advice);
+        const {advice} = response.data.slip
         setAdvice(advice);
       })
       .catch((error) => {
